@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 /**
  * 해당 클래스는 List 컬렉션에 대해 조금 더 친숙해지기 위해 구성된 예제입니다.
- *
  * 주석을 보고, 코드를 실행한 후 다음 문제를 해결해보세요.
  */
 public class ListCollectionExample {
@@ -21,7 +20,7 @@ public class ListCollectionExample {
         System.out.println("How many students are there?");
         System.out.print("> ");
         int next = scanner.nextInt();
-        for (int i = 0; i < next; i++) {
+        for (int i = 0; i < next; i++) {        // 입력 받은 숫자 만큼 반복
             System.out.println("Enter the name of the student.");
             System.out.print("> ");
             String name = scanner.next();
@@ -38,20 +37,16 @@ public class ListCollectionExample {
             System.out.println("Name: " + student.getName() + ", Age: " + student.getAge());
         }
     }
-
     static class Student {
         private final String name;
         private final int age;
-
         public Student(String name, int age) {
             this.name = name;
             this.age = age;
         }
-
         public String getName() {
             return name;
         }
-
         public int getAge() {
             return age;
         }

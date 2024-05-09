@@ -10,7 +10,7 @@ package kr.easw.lesson07;
 public class GenericsExample {
 
     public static void main(String[] args) {
-        Recipe<Ingredient, Cake> recipe = new Recipe<>(new RottenEgg()) {
+        Recipe<Ingredient, Cake> recipe = new Recipe<>(new Egg()) {
             @Override
             public Cake cook() {
                 // 제너릭스를 통해 클래스를 확정했음으로, T 제너릭스가 Ingredient를 상속받는것이 보장됩니다.
